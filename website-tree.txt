@@ -1,0 +1,100 @@
+.
+├── ./.gitignore
+├── ./next-env.d.ts
+├── ./next.config.js
+├── ./package-lock.json
+├── ./package.json
+├── ./postcss.config.js
+├── ./public
+│   ├── ./public/education
+│   │   ├── ./public/education/college_img.jpg
+│   │   └── ./public/education/school_img.jpg
+│   ├── ./public/experience
+│   │   ├── ./public/experience/bharatIntern_page.jpg
+│   │   ├── ./public/experience/codeAlpha_page.jpg
+│   │   ├── ./public/experience/codeClause_page.jpg
+│   │   └── ./public/experience/oasisInfobyte_page.jpg
+│   ├── ./public/files
+│   │   ├── ./public/files/certificates_pdf
+│   │   │   ├── ./public/files/certificates_pdf/TypeScript.pdf
+│   │   │   ├── ./public/files/certificates_pdf/aws_ecs.pdf
+│   │   │   ├── ./public/files/certificates_pdf/critical_infrastructure_protection.pdf
+│   │   │   ├── ./public/files/certificates_pdf/cybersecurity_virtual_program.pdf
+│   │   │   ├── ./public/files/certificates_pdf/docker_fundamentals.pdf
+│   │   │   ├── ./public/files/certificates_pdf/javascript.pdf
+│   │   │   └── ./public/files/certificates_pdf/python.pdf
+│   │   ├── ./public/files/cv_pdf
+│   │   │   └── ./public/files/cv_pdf/Niladri_Chatterjee(CV).pdf
+│   │   ├── ./public/files/education_pdf
+│   │   │   ├── ./public/files/education_pdf/B Tech.pdf
+│   │   │   └── ./public/files/education_pdf/HS MARK SHEET.pdf
+│   │   └── ./public/files/experience_pdf
+│   │       ├── ./public/files/experience_pdf/bharatIntern.pdf
+│   │       ├── ./public/files/experience_pdf/codeAlpha.pdf
+│   │       ├── ./public/files/experience_pdf/codeClause.pdf
+│   │       └── ./public/files/experience_pdf/oasisInfobyte.pdf
+│   ├── ./public/googlea4a36904e14398c1.html
+│   ├── ./public/manifest.json
+│   ├── ./public/nextjs.png
+│   ├── ./public/profile
+│   │   ├── ./public/profile/Virtualbox_logo.png
+│   │   ├── ./public/profile/kali_logo.png
+│   │   └── ./public/profile/profile.jpg
+│   ├── ./public/projects_img
+│   │   ├── ./public/projects_img/project-1.png
+│   │   ├── ./public/projects_img/project-2.png
+│   │   ├── ./public/projects_img/project-3.png
+│   │   ├── ./public/projects_img/project-4.png
+│   │   ├── ./public/projects_img/project-5.png
+│   │   └── ./public/projects_img/project-6.png
+│   ├── ./public/robots.txt
+│   └── ./public/sitemap.xml
+├── ./src
+│   ├── ./src/app
+│   │   ├── ./src/app/about
+│   │   │   └── ./src/app/about/page.tsx
+│   │   ├── ./src/app/certificates
+│   │   │   └── ./src/app/certificates/page.tsx
+│   │   ├── ./src/app/contact
+│   │   │   └── ./src/app/contact/page.tsx
+│   │   ├── ./src/app/education
+│   │   │   └── ./src/app/education/page.tsx
+│   │   ├── ./src/app/experience
+│   │   │   └── ./src/app/experience/page.tsx
+│   │   ├── ./src/app/globals.css
+│   │   ├── ./src/app/kali
+│   │   │   └── ./src/app/kali/page.tsx
+│   │   ├── ./src/app/layout.tsx
+│   │   ├── ./src/app/not-found.tsx
+│   │   ├── ./src/app/offline
+│   │   │   └── ./src/app/offline/page.tsx
+│   │   ├── ./src/app/page.tsx
+│   │   ├── ./src/app/projects
+│   │   │   └── ./src/app/projects/page.tsx
+│   │   └── ./src/app/skills
+│   │       └── ./src/app/skills/page.tsx
+│   ├── ./src/components
+│   │   ├── ./src/components/Background3D.tsx
+│   │   ├── ./src/components/Footer.tsx
+│   │   ├── ./src/components/Loading.tsx
+│   │   ├── ./src/components/Navbar.tsx
+│   │   ├── ./src/components/PageTransition.tsx
+│   │   ├── ./src/components/ScrollAnimation.tsx
+│   │   ├── ./src/components/SearchDialog.tsx
+│   │   └── ./src/components/TechLogos.tsx
+│   ├── ./src/middleware.ts
+│   └── ./src/pages
+│       ├── ./src/pages/About.tsx
+│       ├── ./src/pages/Certificates.tsx
+│       ├── ./src/pages/Contact.tsx
+│       ├── ./src/pages/Education.tsx
+│       ├── ./src/pages/Experience.tsx
+│       ├── ./src/pages/Home.tsx
+│       ├── ./src/pages/Kali.tsx
+│       ├── ./src/pages/Projects.tsx
+│       └── ./src/pages/Skills.tsx
+├── ./tailwind.config.js
+├── ./tsconfig.json
+└── ./website-tree.txt
+
+24 directories, 74 files
