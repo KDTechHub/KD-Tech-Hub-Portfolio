@@ -21,16 +21,6 @@ const nextConfig = {
 		formats: ['image/webp', 'image/avif'],
 	},
 
-	async redirects() {
-		return [
-			{
-				source: '/:path*',
-				destination: 'https://www.kdtechhub.top/:path*',
-				permanent: true,
-			},
-		];
-	},
-
 	headers: async () => {
 		return [
 			{
