@@ -46,12 +46,12 @@ export const metadata: Metadata = {
 			noimageindex: true,
 		},
 	},
-	metadataBase: new URL('https://kd-tech-hub-portfolio.vercel.app'),
+	metadataBase: new URL('https://www.kdtechhub.top'),
 	alternates: {
 		canonical: '/',
 	},
 	verification: {
-		google: '/google86ae9cab2d612bb8.html',
+		google: '/googleb59f67533b22928f.html',
 	},
 };
 
