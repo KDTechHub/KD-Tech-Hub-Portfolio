@@ -1,8 +1,7 @@
 'use client';
 
-
 import Link from 'next/link';
-import { Code2, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Code2, Github, Linkedin, Mail, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -19,7 +18,6 @@ const Footer = () => {
 		{ name: 'Kali Linux', path: '/kali' },
 	];
 
-	// Split links into columns of 3
 	const column1 = pageLinks.slice(0, 3);
 	const column2 = pageLinks.slice(3, 6);
 	const column3 = pageLinks.slice(6, 9);
@@ -37,7 +35,10 @@ const Footer = () => {
 							<span className="text-xl font-bold text-white">Kuadugah Delight</span>
 						</Link>
 						<p className="text-sm text-gray-400">
-							Software Developer based in Ghana, Volta region.
+							Jack of All Trades | Developer • Designer • Hacker and many more digital skills
+						</p>
+						<p className="text-sm text-gray-500">
+							Full-Stack Developer • Product Builder • Digital Technology Entrepreneur based in Ghana.
 						</p>
 					</div>
 
@@ -45,6 +46,12 @@ const Footer = () => {
 					<div className="space-y-4">
 						<h3 className="text-sm font-semibold text-white">Contact</h3>
 						<ul className="space-y-3">
+							<li>
+								<a href="mailto:support@kdtechhub.top" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+									<Mail className="w-4 h-4" />
+									support@kdtechhub.top
+								</a>
+							</li>
 							<li>
 								<a href="mailto:kdtechhub@gmail.com" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
 									<Mail className="w-4 h-4" />
@@ -57,17 +64,47 @@ const Footer = () => {
 									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
 								>
 									<Phone className="w-4 h-4" />
-									+233594516288
+									+233 59 451 6288
+								</a>
+							</li>
+							<li>
+								<a
+									href="tel:+233505401288"
+									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+								>
+									<Phone className="w-4 h-4" />
+									+233 50 540 1288
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://wa.me/233594516288"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+								>
+									<MessageCircle className="w-4 h-4" />
+									WhatsApp: +233 59 451 6288
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://wa.me/233505401288"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+								>
+									<MessageCircle className="w-4 h-4" />
+									WhatsApp: +233 50 540 1288
 								</a>
 							</li>
 						</ul>
 					</div>
 
-					{/* Links - First Column */}
+					{/* Links */}
 					<div className="space-y-4">
 						<h3 className="text-sm font-semibold text-white">Quick Links</h3>
 						<div className="grid grid-cols-3 gap-x-6 gap-y-3">
-							{/* Column 1 */}
 							<div>
 								{column1.map(link => (
 									<Link
@@ -79,7 +116,6 @@ const Footer = () => {
 									</Link>
 								))}
 							</div>
-							{/* Column 2 */}
 							<div>
 								{column2.map(link => (
 									<Link
@@ -91,7 +127,6 @@ const Footer = () => {
 									</Link>
 								))}
 							</div>
-							{/* Column 3 */}
 							<div>
 								{column3.map(link => (
 									<Link
@@ -111,10 +146,11 @@ const Footer = () => {
 						<h3 className="text-sm font-semibold text-white">Social</h3>
 						<div className="flex space-x-4">
 							<a
-								href="https://github.com/kdtechhub"
+								href="https://github.com/KDTechHub"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
+								aria-label="GitHub"
 							>
 								<Github className="w-5 h-5" />
 							</a>
@@ -123,14 +159,25 @@ const Footer = () => {
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
+								aria-label="LinkedIn"
 							>
 								<Linkedin className="w-5 h-5" />
 							</a>
 							<a
-								href="mailto:kdtechhub@gmail.com"
+								href="mailto:support@kdtechhub.top"
 								className="text-gray-400 hover:text-white transition-colors"
+								aria-label="Email"
 							>
 								<Mail className="w-5 h-5" />
+							</a>
+							<a
+								href="https://wa.me/233594516288"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-gray-400 hover:text-white transition-colors"
+								aria-label="WhatsApp"
+							>
+								<MessageCircle className="w-5 h-5" />
 							</a>
 						</div>
 					</div>
@@ -138,18 +185,13 @@ const Footer = () => {
 
 				{/* Bottom bar */}
 				<div className="border-t border-white/10 py-6">
-					<div className="flex flex-col md:flex-row justify-between items-center">
-						<p className="text-sm text-gray-400">
-							© {currentYear} Kuadugah Delight. All rights reserved.
+					<div className="flex flex-col md:flex-row justify-between items-center gap-4">
+						<p className="text-sm text-gray-400 text-center md:text-left">
+							© {currentYear} Kuadugah Delight (KD Tech Hub). All rights reserved. Jack of All Trades | Developer • Designer • Hacker and many more digital skills.
 						</p>
-						<div className="flex space-x-6 mt-4 md:mt-0">
-							<a href="" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2">
-								<svg className="w-3 h-3" fill="currentColor" viewBox="0 0 32 32">
-									<path d="M12 1L24 22H0L12 1Z" />
-								</svg>
-								Kuadugah Delight Portfolio
-							</a>
-						</div>
+						<p className="text-xs text-gray-500">
+							Full-Stack Web Development • Trading Tech • AI • Digital Marketing • E-commerce • Music & Video Production
+						</p>
 					</div>
 				</div>
 			</div>
