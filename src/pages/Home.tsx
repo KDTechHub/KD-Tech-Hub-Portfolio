@@ -4,6 +4,7 @@ import { VercelLogo } from '@/components/TechLogos';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, MessageCircle, Copy, Check, FileDown, User } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import useSWR from 'swr';
 
@@ -11,8 +12,9 @@ const fetcher = (url: string) => fetch(url).then(res => res.json());
 
 const Home = () => {
 	const [copied, setCopied] = useState(false);
-	const email = 'kdtechhub@gmail.com';
-	const whatsappNumber = '+233594516288';
+	const email = 'support@kdtechhub.top';
+	const whatsappNumber = '233594516288';
+	const whatsappNumber2 = '233505401288';
 
 	const { data: githubData } = useSWR('https://api.github.com/users/kdtechhub', fetcher);
 	function formatRepoCount(count: number): string {
@@ -44,6 +46,23 @@ const Home = () => {
 	return (
 		<div className="min-h-screen flex items-center justify-center px-4 mt-7 sm:mt-0 md:mt-3 lg:mt-5">
 			<div className="text-center relative z-10 max-w-4xl mx-auto">
+				<motion.div
+					className="mb-6 sm:mb-8 flex justify-center"
+					initial={{ opacity: 0, scale: 0.8 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.8 }}
+				>
+					<div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-white/20 shadow-2xl shadow-blue-500/20">
+						<Image
+							src="/profile/my_profile_new.jpg"
+							alt="Kuadugah Delight - Full-Stack Developer, Designer, Hacker and Jack of All Trades at KD Tech Hub"
+							fill
+							className="object-cover"
+							priority
+							sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, 192px"
+						/>
+					</div>
+				</motion.div>
 				<motion.h1
 					className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 sm:mb-6 relative tracking-tighter"
 					initial={{ opacity: 0, y: 20 }}
@@ -58,7 +77,7 @@ const Home = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8 }}
 				>
-					I design & code for web
+					Jack of All Trades | Developer • Designer • Hacker
 				</motion.h2>
 
 				<motion.p
@@ -67,7 +86,7 @@ const Home = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
 				>
-					Software Developer specializing in Full Stack Development with expertise in Next.js, Node.js, modern Web Technologies and more.
+					Jack of All Trades | Full-Stack Developer • Designer • Hacker • Trading Tech Specialist • AI Creator • Digital Marketer • Product Builder. Expertise in Next.js, React, TypeScript, Pine Script, SEO, E-commerce, AI tools & more.
 				</motion.p>
 
 				<motion.div
@@ -123,7 +142,7 @@ const Home = () => {
 					transition={{ duration: 0.8, delay: 0.6 }}
 				>
 					<motion.a
-						href="https://github.com/kdtechhub"
+						href="https://github.com/KDTechHub"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex flex-col items-center group w-full"
@@ -144,7 +163,7 @@ const Home = () => {
 					</motion.a>
 
 					<motion.a
-						href="https://linkedin.com/in/kdtechhub"
+						href="https://www.linkedin.com/in/kuadugah-delight-27376431b"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="flex flex-col items-center group w-full"
