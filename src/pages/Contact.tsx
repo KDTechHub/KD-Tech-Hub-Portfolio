@@ -28,6 +28,12 @@ const Contact = () => {
 	const contactInfo = [
 		{
 			icon: <Mail className="w-5 h-5" />,
+			label: 'Support Email',
+			value: 'support@kdtechhub.top',
+			link: 'mailto:support@kdtechhub.top'
+		},
+		{
+			icon: <Mail className="w-5 h-5" />,
 			label: 'Email',
 			value: 'kdtechhub@gmail.com',
 			link: 'mailto:kdtechhub@gmail.com'
@@ -35,8 +41,26 @@ const Contact = () => {
 		{
 			icon: <Phone className="w-5 h-5" />,
 			label: 'Phone',
-			value: '+233594516288',
+			value: '+233 59 451 6288',
 			link: 'tel:+233594516288'
+		},
+		{
+			icon: <Phone className="w-5 h-5" />,
+			label: 'Phone 2',
+			value: '+233 50 540 1288',
+			link: 'tel:+233505401288'
+		},
+		{
+			icon: <MessageCircle className="w-5 h-5" />,
+			label: 'WhatsApp',
+			value: '+233 59 451 6288',
+			link: 'https://wa.me/233594516288'
+		},
+		{
+			icon: <MessageCircle className="w-5 h-5" />,
+			label: 'WhatsApp 2',
+			value: '+233 50 540 1288',
+			link: 'https://wa.me/233505401288'
 		},
 		{
 			icon: <MapPin className="w-5 h-5" />,
@@ -64,7 +88,7 @@ const Contact = () => {
 		{
 			icon: <MessageCircle className="w-5 h-5" />,
 			label: 'WhatsApp',
-			link: 'https://wa.me/447555825875'
+			link: 'https://wa.me/233594516288'
 		}
 	];
 
