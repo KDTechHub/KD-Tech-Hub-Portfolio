@@ -1,119 +1,132 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
 import { ScrollAnimation } from '@/components/ScrollAnimation';
 
 const projects = [
-  	{
-		title: 'KD Boost Hub',
-		description: 'A real time convenient platform with admin panel for purchasing data bundles, airtime, and telecom services quickly and securely.',
-		image: '/projects_img/project-8.jpg',
-		github: 'https://wa.me/447555825875',
-		live: 'https://www.kdboosthub.org',
-		tags: ["Next.js", "TypeScript", "Tailwind CSS"]
-	},
-  	{
-		title: 'KD SMM Hub',
-		description: 'Premium social media marketing panel with admin offering affordable followers, likes, views, and fast delivery.',
-		image: '/projects_img/project-7.jpg',
-		github: 'https://wa.me/447555825875',
-		live: 'https://www.kdsmmhub.top',
-		tags: ["Next.js", "TypeScript", "Tailwind CSS"]
-	},
 	{
-		title: 'Live Docs',
-		description: 'Real-time collaborative document editor built with Next.js, TypeScript, and Tailwind CSS, featuring live editing, comments, and notifications.',
+		title: 'Project 1',
+		description: 'A modern web application built with Next.js and TypeScript.',
 		image: '/projects_img/project-1.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://livedocs11.vercel.app',
-		tags: ["Next.js", "TypeScript", "Liveblocks", "Lexical Editor", "ShadCN", "Tailwind CSS"]
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['Next.js', 'TypeScript', 'Tailwind'],
 	},
 	{
-		title: 'Figma Clone',
-		description: 'A real-time collaborative design tool inspired by Figma. This application allows users to create, modify, and collaborate on designs in real- time.',
+		title: 'Project 2',
+		description: 'Full-stack e-commerce solution with payment integration.',
 		image: '/projects_img/project-2.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://tigma1.vercel.app/',
-		tags: ["Next.js", "TypeScript", "Liveblocks", "Fabric.js", "Shadcn", "Tailwind CSS"]
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['React', 'Node.js', 'MongoDB'],
 	},
 	{
-		title: 'Video Conferencing App',
-		description: 'The Video Conferencing App enables users to create and join video meetings with chat, screen sharing, and recording features.',
+		title: 'Project 3',
+		description: 'Trading indicator and signal system for Forex.',
 		image: '/projects_img/project-3.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://yoom01.vercel.app/',
-		tags: ["Tailwind CSS", "React.js", "Next.js", "Clerk", "Stream"]
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['Pine Script', 'TradingView'],
 	},
 	{
-		title: 'Gemini Chatbot',
-		description: 'React-based chatbot clone of Google Gemini AI. It offers a chat interface, uses Gemini for responses, and is styled with CSS.',
+		title: 'Project 4',
+		description: 'AI-powered content generation platform.',
 		image: '/projects_img/project-4.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://gamini-bot.vercel.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'Google APIs']
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['AI', 'Next.js', 'API'],
 	},
 	{
-		title: 'Travel App',
-		description: 'Travel App is a Next.js web application offering travel information, built with Tailwind CSS for a modular, responsive user interface.',
+		title: 'Project 5',
+		description: 'Digital marketing and SMM dashboard.',
 		image: '/projects_img/project-5.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://hilinking.vercel.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'TypeScript']
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['React', 'Meta Ads', 'Analytics'],
 	},
 	{
-		title: 'Brainwave Project',
-		description: 'A modern AI application built with React JS and Tailwind CSS, featuring smooth animations, unique design elements, and responsive layouts.Ideal for enhancing web development skills',
+		title: 'Project 6',
+		description: 'E-commerce store with Printify integration.',
 		image: '/projects_img/project-6.png',
-		github: 'https://wa.me/447555825875',
-		live: 'https://brainswave.netlify.app/',
-		tags: ['React.js', 'Tailwind CSS', 'JavaScript', 'Vite']
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['E-commerce', 'Printify', 'Next.js'],
+	},
+	{
+		title: 'Project 7',
+		description: 'Music production and AI vocals workflow.',
+		image: '/projects_img/project-7.jpg',
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['AI Music', 'Suno', 'Production'],
+	},
+	{
+		title: 'Project 8',
+		description: 'Video content and YouTube SEO toolkit.',
+		image: '/projects_img/project-8.jpg',
+		github: 'https://wa.me/233594516288',
+		live: '#',
+		tags: ['Video', 'YouTube SEO', 'CapCut'],
 	},
 ];
 
 const Projects = () => {
 	return (
-		<div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto">
+		<div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20">
 			<ScrollAnimation>
-				<h1 className="text-4xl font-bold mb-12 gradient-text">Projects & Real World Solutions I Built</h1>
+				<h1 className="text-4xl font-bold mb-4 gradient-text">Featured Projects</h1>
 			</ScrollAnimation>
-			
 			<ScrollAnimation>
 				<p className="text-gray-400 mb-12 max-w-2xl">
-					A curated collection of real-world projects showcasing my experience in full-stack development, web applications, SaaS platforms, e-commerce systems, automation tools, and scalable digital solutions. Each project reflects practical problem-solving, performance, and modern technologies.
+					A selection of projects spanning full-stack web development, trading technology, AI tools, e-commerce, and digital marketing — demonstrating the Jack of All Trades approach.
 				</p>
 			</ScrollAnimation>
 
-			<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+			<div className="grid md:grid-cols-2 gap-8">
 				{projects.map((project, index) => (
 					<ScrollAnimation key={project.title}>
-						<div className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm">
-							<img
-								src={project.image}
-								alt={project.title}
-								className="w-full h-48 object-cover"
-							/>
+						<div className="bg-gray-800/50 rounded-xl overflow-hidden border border-white/5 hover:border-white/10 transition-all group">
+							<div className="relative h-48 overflow-hidden">
+								<Image
+									src={project.image}
+									alt={project.title}
+									fill
+									className="object-cover group-hover:scale-105 transition-transform duration-500"
+								/>
+							</div>
 							<div className="p-6">
 								<h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-								<p className="text-gray-400 mb-4">{project.description}</p>
+								<p className="text-gray-400 text-sm mb-4">{project.description}</p>
 								<div className="flex flex-wrap gap-2 mb-4">
 									{project.tags.map(tag => (
-										<span key={tag} className="px-2 py-1 text-sm bg-purple-500/20 rounded">
+										<span key={tag} className="px-2 py-1 text-xs bg-white/10 rounded-full text-gray-300">
 											{tag}
 										</span>
 									))}
 								</div>
-								<div className="flex space-x-4">
-									<a href={project.github} target="_blank" rel="noopener noreferrer"
-										className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
+								<div className="flex gap-4">
+									<a
+										href={project.github}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+									>
 										<Github className="w-4 h-4" />
-										<span>Code</span>
+										Contact / WhatsApp
 									</a>
-									<a href={project.live} target="_blank" rel="noopener noreferrer"
-										className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors">
-										<ExternalLink className="w-4 h-4" />
-										<span>Live</span>
-									</a>
+									{project.live !== '#' && (
+										<a
+											href={project.live}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+										>
+											<ExternalLink className="w-4 h-4" />
+											Live Demo
+										</a>
+									)}
 								</div>
 							</div>
 						</div>

@@ -14,9 +14,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: 'Kuadugah Delight - Full-Stack Developer, Tech Entrepreneur, Digital Solutions Expert & More',
-	description: 'Kuadugah Delight is a Full-Stack Developer, Tech Entrepreneur, and Digital Solutions Expert offering web development, software engineering, SEO, e-commerce, SMM, automation, telecom services & more.',
-	keywords: 'Kuadugah Delight, Delight, Mr D, Software Developer, Full Stack Developer, Web Developer, Web & Software Engineer, MERN Stack Developer, React Developer, Next.js Expert, Frontend Developer, Backend Developer, JavaScript Expert, TypeScript Developer, Node.js Developer, Database Developer, MongoDB Expert, SQL Developer, SEO Expert, CMS Expert, Digital Growth Specialist, E-commerce Developer, SMM Panel Developer, Tech Consultant, IT Services & Consulting, Online Business Builder',
+	title: { default: 'Kuadugah Delight | Jack of All Trades - Full-Stack Developer, Designer, Hacker, AI & Trading Tech Expert | KD Tech Hub', template: '%s | Kuadugah Delight - KD Tech Hub' },
+	description: 'Kuadugah Delight (KD Tech Hub) is a Jack of All Trades: Full-Stack Web Developer, Designer, Hacker, Pine Script Trading Indicator Developer, AI Content Creator, Digital Marketer, E-commerce Expert, Music & Video Producer. Hire for Next.js, React, TypeScript, SEO, Meta Ads, Forex tools, PWAs, Vercel deployment & complete digital solutions. Based in Ghana. Contact +233594516288 or support@kdtechhub.top',
+	keywords: [
+		'Kuadugah Delight', 'KD Tech Hub', 'Jack of All Trades', 'Full Stack Developer Ghana', 'Next.js Developer', 'React TypeScript Expert',
+		'Pine Script Developer', 'TradingView Indicator', 'Forex Trading Tools', 'Non-repainting Indicators', 'BOS CHOCH FVG',
+		'AI Image Generation', 'AI Music Production', 'Suno', 'Prompt Engineering', 'Digital Marketing Ghana', 'Meta Ads Expert',
+		'SMM Services', 'E-commerce Development', 'Print on Demand', 'Printify', 'SEO Expert Ghana', 'Website Performance Optimization',
+		'PWA Developer', 'Vercel Deployment', 'Android App Troubleshooting', 'WhatsApp Business', 'Freelance Developer Ghana',
+		'Web Designer', 'UI UX Design', 'Graphic Design', 'YouTube SEO', 'Content Creator', 'Product Builder', 'Tech Entrepreneur',
+		'Hacker', 'Cybersecurity Awareness', 'VPS Management', 'Domain Management', 'support@kdtechhub.top', '+233594516288', '+233505401288'
+	],
 	authors: [{ name: 'Kuadugah Delight' }],
 	creator: 'Kuadugah Delight',
 	manifest: '/manifest.json',
@@ -26,14 +34,22 @@ export const metadata: Metadata = {
 		type: 'website',
 		locale: 'en_US',
 		url: 'https://www.kdtechhub.top/',
-		title: 'Kuadugah Delight (Mr D) - Full-Stack Developer, Tech Entrepreneur & Digital Solutions Expert',
-		description: 'Official portfolio of Kuadugah Delight (Mr D). Full-Stack Developer, Software Engineer, Tech Entrepreneur & Founder delivering web, software, e-commerce, SMM, SEO, automation, and scalable digital solutions worldwide.',
-		siteName: 'Kuadugah Delight | Tech & Digital Solutions',
+		title: 'Kuadugah Delight | Jack of All Trades - Full-Stack Developer • Designer • Hacker • AI & Trading Expert',
+		description: 'Official portfolio of Kuadugah Delight. Full-Stack Developer, Designer, Hacker, Pine Script specialist, AI creator, digital marketer & product builder. Web apps, trading tools, e-commerce, SEO, music & video production. Contact support@kdtechhub.top or WhatsApp +233594516288',
+		siteName: 'KD Tech Hub | Kuadugah Delight',
+		images: [
+			{
+				url: '/profile/my_profile_new.jpg',
+				width: 800,
+				height: 800,
+				alt: 'Kuadugah Delight - Jack of All Trades Full-Stack Developer',
+			},
+		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: 'Kuadugah Delight | Full-Stack Developer & Tech Entrepreneur',
-		description: 'Portfolio of Kuadugah Delight (Mr D) - Full-Stack Developer, Software Engineer & Digital Solutions Expert creating web apps, SaaS platforms, e-commerce systems, SEO-driven websites & scalable tech products.',
+		title: 'Kuadugah Delight | Jack of All Trades Developer • Designer • Hacker',
+		description: 'Full-Stack Web Dev, Trading Tech, AI, Digital Marketing, E-commerce, Music & Video. Hire the multi-skilled expert. support@kdtechhub.top | +233594516288',
 		creator: '@KDTechHubOnline',
 	},
 	robots: {
